@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(240, 240, 240);
+  margin: 0px;
+  padding: 0px;
+}
+
+html{
+  min-height:100%;/* make sure it is at least as tall as the viewport */
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.bd {
+  border-style: solid;
+  flex:1;
+}
