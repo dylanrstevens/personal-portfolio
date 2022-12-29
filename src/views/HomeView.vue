@@ -119,7 +119,7 @@
     }
     }
 
-    @media screen and (max-width: 390px) {
+    @media only screen and (max-width: 768px) {
     img {
         height: 150px;
         width: 150px;
@@ -205,7 +205,7 @@
     }
     }
 
-    @media screen and (max-width: 390px) {
+    @media only screen and (max-width: 768px) {
     .name_header {
         font-size: 24px;
     }
@@ -224,7 +224,7 @@
     }
     }
 
-    @media screen and (max-width: 390px) {
+    @media only screen and (max-width: 768px)  {
     .desc {
         font-size: 12px;
     }
