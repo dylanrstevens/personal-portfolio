@@ -119,6 +119,13 @@
     }
     }
 
+    @media screen and (max-width: 390px) {
+    img {
+        height: 150px;
+        width: 150px;
+    }
+    }
+
     .items {
         overflow: hidden;
         display: flex;
@@ -198,6 +205,12 @@
     }
     }
 
+    @media screen and (max-width: 390px) {
+    .name_header {
+        font-size: 24px;
+    }
+    }
+
     .desc {
         font-family: 'Raleway', sans-serif;
         font-weight: 300;
@@ -208,6 +221,12 @@
     @media screen and (max-width: 600px) {
     .desc {
         font-size: 16px;
+    }
+    }
+
+    @media screen and (max-width: 390px) {
+    .desc {
+        font-size: 12px;
     }
     }
     
