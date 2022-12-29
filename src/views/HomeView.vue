@@ -119,12 +119,6 @@
     }
     }
 
-    @media only screen and (max-width: 768px) {
-    img {
-        height: 150px;
-        width: 150px;
-    }
-    }
 
     .items {
         overflow: hidden;
@@ -132,6 +126,17 @@
         flex-direction: row;
         align-items: center;
     }
+
+    @media only screen and (max-width: 768px) {
+    .items {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    }
+
+
     .photo_and_text {
         flex: 1; 
         display: flex;
@@ -205,11 +210,6 @@
     }
     }
 
-    @media only screen and (max-width: 768px) {
-    .name_header {
-        font-size: 24px;
-    }
-    }
 
     .desc {
         font-family: 'Raleway', sans-serif;
@@ -224,12 +224,6 @@
     }
     }
 
-    @media only screen and (max-width: 768px)  {
-    .desc {
-        font-size: 12px;
-    }
-    }
-    
     .slide1-enter-from {
         transform: translateY(20px);
     }
