@@ -64,7 +64,7 @@ import { ref } from 'vue';
   /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
   .header a.logo {
   font-size: 28px;
-  font-weight: 300;
+  font-weight: 500;
   font-family: 'Raleway', sans-serif;
   transition: 0.3s;
   }
