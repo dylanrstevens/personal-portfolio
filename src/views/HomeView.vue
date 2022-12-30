@@ -97,7 +97,7 @@
   }
 
   .links {
-      background: rgb(240, 240, 240);
+      background: rgb(235, 235, 235);
       display: flex;
       flex-direction: column;
       justify-content: center;

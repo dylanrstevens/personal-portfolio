@@ -1,4 +1,6 @@
 <script setup>
+import WordSphere from 'wordsphere';
+
 </script>
 
 <template>
@@ -19,6 +21,14 @@
             </p>
         </div>
         </a>
+      </div>
+      <div class="word_sphere">
+        <WordSphere
+        :items_list="['Vue', 'Python', 'React', 'Java', 'C/C++', 'SQL Databases', 'Azure', 'React Native', 'REST APIs', 'Git', 'Bash']"
+        :text_color="'#000000'"
+        :update_interval="10"
+        :radius="12"
+        />
       </div>
       <div class="contact_desc">
         <div class="email_desc">
@@ -81,10 +91,9 @@
 
     .contact_content {
       display: flex;
-      justify-content: space-between;
+      justify-content:space-between;
       flex-direction: row;
       height: 100%;
-      background: url("../assets/globe2.png") 50% 80% no-repeat fixed;
         -webkit-animation: fadeIn2 4s; /* Safari, Chrome and Opera > 12.1 */
         -moz-animation: fadeIn2 4s; /* Firefox < 16 */
         -ms-animation: fadeIn2 4s; /* Internet Explorer */
@@ -92,7 +101,7 @@
         animation: fadeIn2 4s;
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 960px) {
     .contact_content {
       flex-direction: column;
       justify-content: center;
@@ -107,11 +116,20 @@
         font-size: 48px;
         font-weight: 200;
         color: black;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 960px) {
+    .email_header {
+      font-size: 48px;
+      margin-top: 20px;
+    }
     }
 
     @media only screen and (max-width: 768px) {
     .email_header {
       font-size: 36px;
+      margin-top: 20px;
     }
     }
 
@@ -196,5 +214,43 @@
       width: 300px;
     }
     }
+
+    .word_sphere {
+      transform: scale(0.8);
+      position: relative;
+      max-height: 500px;
+      background-size: contain;
+    }
+
+    @media only screen and (max-width: 1100px) {
+      .word_sphere {
+      transform: scale(0.7);
+      max-width: 70%;
+    }
+    }
+
+    @media only screen and (max-width: 1000px) {
+      .word_sphere {
+      transform: scale(0.55);
+      max-width:55%;
+    }
+    }
+
+    @media only screen and (max-width: 960px) {
+      .word_sphere {
+      transform: scale(0.7);
+      max-width:100%;
+    }
+    }
+
+
+    @media only screen and (max-width: 768px) {
+      .word_sphere {
+      transform: scale(0.55);
+      max-width: 500%;
+      max-height: 100%;
+    }
+    }
+
 
 </style>
